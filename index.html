@@ -7,36 +7,60 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div id="senha-container">
-    <input type="password" id="senha" placeholder="Digite a senha" />
-    <button onclick="verificarSenha()">Entrar</button>
+  <div class="overlay" id="passwordScreen">
+    <div class="password-box">
+      <h2>Digite a senha</h2>
+      <input type="password" id="passwordInput" placeholder="Senha" />
+      <button onclick="checkPassword()">Acessar</button>
+    </div>
   </div>
 
-  <div id="conteudo" style="display: none;">
-    <h1>Para a Minha Princesinha</h1>
-    <div class="cartas">
-      <div class="carta">Carta 1: Texto provisório da primeira carta...</div>
-      <div class="carta">Carta 2: Texto provisório da segunda carta...</div>
-      <div class="carta">Carta 3: Texto provisório da terceira carta...</div>
-    </div>
+  <div class="container" id="mainContent" style="display: none;">
+    <header>
+      <h1>Para a Minha Princesinha 💌</h1>
+    </header>
 
-    <div class="fotos">
-      <img src="img1.jpg" alt="Foto 1" />
-      <img src="img2.jpg" alt="Foto 2" />
-      <img src="img3.jpg" alt="Foto 3" />
-      <img src="img4.jpg" alt="Foto 4" />
-      <img src="img5.jpg" alt="Foto 5" />
-    </div>
+    <section class="cartas">
+      <article>
+        <h2>Carta 1</h2>
+        <p>Texto provisório da primeira carta. Você pode editar isso depois.</p>
+      </article>
+      <article>
+        <h2>Carta 2</h2>
+        <p>Texto provisório da segunda carta. Palavras doces e sinceras.</p>
+      </article>
+      <article>
+        <h2>Carta 3</h2>
+        <p>Texto provisório da terceira carta. Emoções e carinho escritos aqui.</p>
+      </article>
+    </section>
 
-    <div class="videos">
-      <video controls src="video1.mp4"></video>
-      <video controls src="video2.mp4"></video>
-    </div>
+    <section class="galeria">
+      <h2>Fotos</h2>
+      <div class="fotos">
+        <img src="img1.jpg" alt="Foto 1" />
+        <img src="img2.jpg" alt="Foto 2" />
+        <img src="img3.jpg" alt="Foto 3" />
+        <img src="img4.jpg" alt="Foto 4" />
+        <img src="img5.jpg" alt="Foto 5" />
+      </div>
+    </section>
 
-    <audio controls autoplay loop>
-      <source src="musica.mp3" type="audio/mpeg" />
-      Seu navegador não suporta áudio.
-    </audio>
+    <section class="videos">
+      <h2>Vídeos</h2>
+      <div class="video-wrapper">
+        <video controls src="video1.mp4"></video>
+        <video controls src="video2.mp4"></video>
+      </div>
+    </section>
+
+    <section class="musica">
+      <h2>Música para você</h2>
+      <audio controls>
+        <source src="sua-musica.mp3" type="audio/mpeg" />
+        Seu navegador não suporta o player de áudio.
+      </audio>
+    </section>
   </div>
 
   <script src="script.js"></script>
