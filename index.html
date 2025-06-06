@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Para a Minha Princesinha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="entrada">
+        <h1>💌 Para a Minha Princesinha 💌</h1>
+        <p>Tenho algo especial pra você...</p>
+        <button onclick="entrarSite()">Abrir Minha Carta</button>
+    </div>
+
+    <div class="container" id="conteudo" style="display: none;">
+        <audio autoplay loop id="musica">
+            <source src="audio/musica.mp3" type="audio/mp3">
+            Seu navegador não suporta áudio.
+        </audio>
+
+        <h1>Para a Minha Princesinha 💌</h1>
+        <div class="cartas">
+            <div class="carta ativa" id="carta1">
+                <h2>Carta 1</h2>
+                <p>Essa é a primeira cartinha... Aqui você pode escrever algo lindo para sua princesinha 💖</p>
+            </div>
+            <div class="carta" id="carta2">
+                <h2>Carta 2</h2>
+                <p>Essa é a segunda cartinha... Continue mostrando o quanto ela é especial ✨</p>
+            </div>
+            <div class="carta" id="carta3">
+                <h2>Carta 3</h2>
+                <p>Essa é a terceira cartinha... Finalize com muito carinho e amor 💕</p>
+            </div>
+            <div class="navegacao">
+                <button onclick="anteriorCarta()">Anterior</button>
+                <button onclick="proximaCarta()">Próxima</button>
+            </div>
+        </div>
+
+        <h2>📸 Nossas Memórias</h2>
+        <div class="galeria">
+            <img src="img/foto1.jpg" alt="Foto 1">
+            <img src="img/foto2.jpg" alt="Foto 2">
+            <img src="img/foto3.jpg" alt="Foto 3">
+            <img src="img/foto4.jpg" alt="Foto 4">
+            <img src="img/foto5.jpg" alt="Foto 5">
+        </div>
+
+        <h2>🎥 Nossos Vídeos</h2>
+        <div class="videos">
+            <video controls src="videos/video1.mp4"></video>
+            <video controls src="videos/video2.mp4"></video>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
