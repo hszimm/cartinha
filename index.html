@@ -5,6 +5,106 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Para a Minha Princesinha</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fff0f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    #senha-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      gap: 10px;
+      background: #fce4ec;
+    }
+
+    #senha-container input,
+    #senha-container button {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+    }
+
+    #senha-container button {
+      background-color: #8b1e3f;
+      color: white;
+      cursor: pointer;
+    }
+
+    #conteudo {
+      padding: 15px;
+    }
+
+    #contador {
+      font-size: 20px;
+      text-align: center;
+      font-weight: bold;
+      color: #8b1e3f;
+      margin-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .heart {
+      animation: beat 1s infinite;
+      font-size: 24px;
+      color: red;
+    }
+
+    @keyframes beat {
+      0%, 100% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.3);
+      }
+    }
+
+    .fotos img {
+      width: 100%;
+      max-width: 300px;
+      margin: 10px auto;
+      display: block;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .videos video {
+      width: 100%;
+      max-width: 500px;
+      margin: 15px auto;
+      display: block;
+      border-radius: 12px;
+    }
+
+    .musica {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    @media (min-width: 600px) {
+      .fotos img {
+        display: inline-block;
+        margin: 10px;
+        width: 45%;
+      }
+
+      .videos video {
+        width: 45%;
+        margin: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div id="senha-container">
@@ -13,187 +113,13 @@
   </div>
 
   <div id="conteudo" style="display: none;">
-    <h1>Para a Minha Princesinha 💖</h1>
+    <h1 style="text-align: center; color: #8b1e3f;">Para a Minha Princesinha 💖</h1>
+
+    <!-- 💌 CONTADOR ROMÂNTICO -->
+    <div id="contador"><span class="heart">❤️</span>Calculando...</div>
 
     <div class="cartas">
-      <div class="carta destaque">
-        <h2><span style="color: #8b1e3f;">Lembra do Primeiro texto que eu te fiz?:</span></h2>
-        <p>Olha… independentemente do que for acontecer... <br><br>
-        <strong>Pfvr, não me abandona não tá :/</strong><br>
-        Você é tudo o que eu tenho. É tudo o que eu preciso na minha vida...<br><br>
-        <em>Eu não sei qual vai ser sua reação ao ler isso,
-Mas… vamos lá.
-
-Você sabe que eu te amo muito, né?
-Sempre amei e sempre vou amar.
-
-Você é a garota mais incrível, maravilhosa,
-Bela, elegante, fofa, atenciosa, perfeita…
-que eu já conheci.
-
-Você pode até não acreditar, mas é a verdade.
-Se tem uma coisa que eu nunca mentiria,
-Seria sobre isso:
-
-O que eu sinto por você.
-
-Desde que te conheci, tudo se tornou maravilhoso pra mim.
-Tudo ficou mais leve, mais belo.
-
-Você foi a melhor coisa que já aconteceu na minha vida.
-Toda vez que estou com você,
-Parece um sonho…
-
-Quando estou com você, nada mais importa.
-
-É como se eu estivesse em casa.
-Você é o meu lar.
-
-É como se aquele momento contigo fosse único,
-Como se fosse o último dia da minha vida.
-
-Pra você pode parecer só mais um dia,
-Mas pra mim é especial.
-
-Por você eu vivo.
-Por você eu vivo cada dia.
-
-Quando estou ao seu lado, tudo para.
-E ao mesmo tempo, tudo acelera.
-
-Porque com você, o tempo voa.
-Cada instante vira eternidade.
-
-Tenho certeza de que a teoria da relatividade existe:
-Porque eu poderia passar mil anos com você,
-E ainda assim, sentir que foram apenas alguns minutinhos.
-
-Então… isso aqui eu escrevi pra você.
-
-O que eu quero dizer é:
-
-Não importa o que aconteça, eu sempre vou amar você.
-
-Eu quero estar com você em cada momento.
-
-Mesmo que você não sinta o mesmo,
-Só de estar ao seu lado, eu já sou feliz.
-
-Eu quero estar com você pra sempre.
-E vou estar.
-
-Isso não é uma promessa.
-
-É vontade verdadeira.
-
-Promessas a gente faz por obrigação.
-Mas eu não quero que as coisas entre nós sejam assim.
-
-Quero que tudo aconteça no tempo certo.
-
-Sem pressa, sem pressão.
-
-E se for pra esperar…
-
-Eu espero.
-
-Porque com você… tudo vale a pena.
-
-Nem que seja em outra vida,
-Eu espero por você.
-
-Eu te amo, Miguinha ❤️✨
-Sempre vou te amar.
-
-Amo cada detalhe seu 🤍
-
-Sei que sou simples com as palavras,
-Mas pra você…
-Eu falaria o mundo inteiro e ainda seria pouco.
-
-Você é o motivo do meu sorriso mais sincero.
-
-Você me traz paz.
-
-Posso ter um dia péssimo,
-Mas quando vejo seu rostinho lindo… tudo melhora.
-
-Seu sorriso ilumina o meu dia.
-Seus olhos me encantam.
-
-Com você, até os dias ruins se tornam incríveis.
-
-Só de pensar em você, tudo melhora.
-
-Amo seu jeitinho.
-Amo cada detalhe seu.
-
-Eu poderia dizer de mil formas o quanto você é incrível…
-E ainda não seria o suficiente.
-
-Você é especial.
-
-Você é importante.
-
-Eu amo você.
-
-Um dia, eu ainda vou olhar nos seus olhos
-E dizer tudo isso.
-
-Você vai ver como eu te vejo.
-
-Como eu sou completamente apaixonado por cada pedacinho seu.
-
-Eu amo seus sorrisos,
-Amo seus olhos,
-Amo sua voz,
-Amo seu cabelo,
-Amo suas mãos,
-Amo seus pés,
-Amo seu corpo,
-Amo sua maluquice,
-Amo te fazer sorrir,
-Amo sua companhia,
-Amo o seu jeito,
-Amo tudo em você,
-Eu amo você, ❤️✨
-Eu te amo. 💖
-
-Pra sempre. :)</em>
-        </p>
-      </div>
-
-      <div class="carta"><strong>Oq eu tenho a dizer:</strong> Oi, miguinha...
-
-Eu sei que sempre digo que te amo — e talvez você já esteja até enjoada de ouvir isso tantas vezes — mas é que o que eu sinto por você é tão forte, tão sincero, que eu não consigo guardar só pra mim.
-
-Sabe, eu fico pensando como seria mágico estar perto de você. Toda vez que vejo uma foto ou um vídeo do seu sorriso, eu fico bobo... começo a rir sozinho, acredita? Kkkk
-
-Esses dias eu sonhei com você. Foi algo tão simples, mas que me marcou. A gente estava num lugar que parecia um cinema (eu digo “parecia”, porque nunca fui em um). Eu olhei pro lado... e você estava lá. Com sua mãe. Você olhou pra mim, e não disse nada — mas o seu olhar foi tão intenso, tão doce. Aquele sonho me deixou feliz por dias. Foi como se eu tivesse realmente estado com você.
-
-Quero te dizer que você é maravilhosa. Que é especial de um jeito único. Se eu achasse uma lâmpada mágica, meus três pedidos seriam:
-
-Estar com você pra sempre;
-Que todos os seus sonhos se realizem;
-Que você nunca me abandone.
-Amo cada pedacinho de você:
-
-Seus olhos,
-Seu sorriso,
-Sua risada,
-Seu corpo,
-Suas unhas,
-Seu cabelo,
-Seus pés,
-Seu nariz,
-Sua boca,
-Sua voz,
-Até o som da sua respiração...
-Amo cada detalhe seu.
-
-Obrigado por existir. Obrigado por ser tão perfeita aos meus olhos.
-
-Eu te amo, miguinha. E te amarei sempre. 💖</div>
+      <!-- SUAS CARTAS AQUI -->
     </div>
 
     <div class="fotos">
@@ -222,9 +148,33 @@ Eu te amo, miguinha. E te amarei sempre. 💖</div>
       if (senha === "160423") {
         document.getElementById("senha-container").style.display = "none";
         document.getElementById("conteudo").style.display = "block";
+        atualizarContador();
       } else {
         alert("Senha incorreta.");
       }
+    }
+
+    function atualizarContador() {
+      const contador = document.getElementById("contador");
+      const dataInicial = new Date(2023, 3, 16); // 16/04/2023 (abril = 3)
+      const hoje = new Date();
+
+      let anos = hoje.getFullYear() - dataInicial.getFullYear();
+      let meses = hoje.getMonth() - dataInicial.getMonth();
+      let dias = hoje.getDate() - dataInicial.getDate();
+
+      if (dias < 0) {
+        meses--;
+        const mesAnterior = new Date(hoje.getFullYear(), hoje.getMonth(), 0);
+        dias += mesAnterior.getDate();
+      }
+
+      if (meses < 0) {
+        anos--;
+        meses += 12;
+      }
+
+      contador.innerHTML = `<span class="heart">❤️</span> Já se passaram <strong>${anos}</strong> ano(s), <strong>${meses}</strong> mês(es) e <strong>${dias}</strong> dia(s) desde que te conheci — <strong>16/04/2023</strong>.`;
     }
   </script>
 </body>
