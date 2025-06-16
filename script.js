@@ -8,6 +8,48 @@
       alert("Senha incorreta.");
     }
   }
+// Função do contador de tempo
+function atualizarContador() {
+  const dataConhecimento = new Date("2023-04-16T00:00:00");
+  const agora = new Date();
+
+  const diffMs = agora - dataConhecimento;
+
+  const anos = agora.getFullYear() - dataConhecimento.getFullYear();
+  const meses = agora.getMonth() - dataConhecimento.getMonth();
+  const dias = agora.getDate() - dataConhecimento.getDate();
+
+  let anosFinal = anos;
+  let mesesFinal = meses;
+  let diasFinal = dias;
+
+  if (diasFinal < 0) {
+    mesesFinal -= 1;
+    const diasDoMesAnterior = new Date(agora.getFullYear(), agora.getMonth(), 0).getDate();
+    diasFinal += diasDoMesAnterior;
+  }
+
+  if (mesesFinal < 0) {
+    anosFinal -= 1;
+    mesesFinal += 12;
+  }
+
+  document.getElementById("tempo-decorrido").textContent =
+    `${anosFinal} ano(s), ${mesesFinal} mês(es) e ${diasFinal} dia(s) desde que nos conhecemos.`;
+}
+
+// Só inicia o contador se a senha for correta
+function verificarSenha() {
+  const senha = document.getElementById("senha").value;
+  if (senha === "160423") {
+    document.getElementById("senha-container").style.display = "none";
+    document.getElementById("conteudo").style.display = "block";
+    atualizarContador();
+    setInterval(atualizarContador, 1000 * 60 * 60); // Atualiza a cada hora
+  } else {
+    alert("Senha incorreta.");
+  }
+}
 
   // --- INÍCIO DAS PROTEÇÕES ---
 
